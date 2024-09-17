@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Students</title>
+	<script defer src="./js/script.js"></script>
+</head>
+<body>
+	
+	<div class="container">
+		<ul class="filters-list">
+			<li class="filters-list__item">
+				<h3 class="filters__label">Find student: </h3>
+			</li>
+			<li class="filters-list__item">
+				<input type="text" class="form-control filter-input" id="filterName" placeholder="Student's name">
+			</li>
+			<li class="filters-list__item">
+				<input type="text" class="form-control filter-input" id="filterFaculty" placeholder="Faculty">
+			</li>
+			<li class="filters-list__item">
+				<input type="nuber" class="form-control filter-input" id="filterStart" placeholder="Year of start">
+			</li>
+			<li class="filters-list__item">
+				<input type="number" class="form-control filter-input" id="filterEnd" placeholder="Graduation">
+			</li>
+		</ul>
+		
+		<div class="box">
+			<table class="table">
+				<thead>
+				  <tr>
+					 <th scope="col" id="fullName">Full Name</th>
+					 <th scope="col" id="faculty">Faculty</th>
+					 <th scope="col" id="birthday">Date of birth</th>
+					 <th scope="col" id="study">Years of study</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					 <td></td>
+					 <td></td>
+					 <td></td>
+					 <td></td>
+				  </tr>
+				  <tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				 </tr>
+				 <tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				 </tr>
+				</tbody>
+			 </table>
+		
+		
+
+		 <form class="form">
+			<h3 class="form__label">Add new student</h3>
+			<div class="row">
+				<div class="col">
+				  <input type="text" class="form-control firstName" required placeholder="First Name" aria-label="First Name">
+				</div>
+				<div class="col">
+				  <input type="text" class="form-control lastName" required placeholder="Last Name" aria-label="Last Name">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+				  <input type="text" class="form-control fatherName" required placeholder="Father's / Middle Name" aria-label="Middle Name">
+				</div>
+				<div class="col">
+				  <input type="date" class="form-control dateOfBirth" min="1900-01-01" required  aria-label="Date of birth">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+				  <input type="number" class="form-control yearOfStudy" min="2000" required placeholder="Year of starting university" aria-label="Year of starting university">
+				</div>
+				<div class="col">
+				  <input type="text" class="form-control faculty" required placeholder="Faculty" aria-label="Faculty">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<button class="btn form__btn" type="submit">Add</button>
+				</div>
+				
+			</div>
+		 </form>
+		</div>
+			
+	</div>
+</body>
+</html>

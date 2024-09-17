@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(207, 152, 225);
+}
+
+.container{
+	max-width: 1400px;
+	
+	padding-top: 50px;
+}
+
+.box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.table{
+	flex: 1 1 45%;
+	width: 100%;
+	margin-right: 50px;
+}
+
+.filters-list{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+.table tbody tr{
+	height: auto;
+}
+
+#fullName, #faculty, #birthday, #study{
+	cursor: pointer;
+}
+.form{
+	flex: 1 1 45%;
+}
+
+.form__label{
+	margin-bottom: 1rem;
+}
+
+.row:not(:last-child){
+	margin-bottom: 1rem;
+}
+
+.btn{
+	padding: 10px 40px;
+	background-color: blueviolet;
+	border: 2px solid blueviolet;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.btn:hover{
+	background-color: rgb(188, 133, 239);
+	border: 2px solid #000;
+	color: #000;
+}
+
+.btn:active{
+	background-color: #fff;
+	border: 2px solid blueviolet;
+	color: blueviolet;
+}
